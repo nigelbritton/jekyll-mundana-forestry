@@ -15,6 +15,23 @@ fields:
     max: 
     labelField: 
   label: Ingredients
+- name: instructions
+  type: field_group_list
+  fields:
+  - name: instruction
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Instruction
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Instructions
 - name: nutrition
   type: field_group
   config: {}
@@ -40,29 +57,16 @@ fields:
       required: false
     label: Fat
   label: Nutrition
-- name: preptime
-  type: text
-  config:
-    required: false
-  label: Prep Time
 - name: yield
   type: text
   config:
     required: false
   label: Yield
-- name: instructions
-  type: field_group_list
-  fields:
-  - name: instruction
-    type: text
-    config:
-      required: false
-    label: Instruction
+- name: preptime
+  type: text
   config:
-    min: 
-    max: 
-    labelField: 
-  label: Instructions
+    required: false
+  label: Prep Time
 - name: cooktime
   type: text
   config:
