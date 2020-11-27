@@ -72,3 +72,5 @@ fields:
   config:
     required: false
   label: Cook Time
+pages:
+- cooked-spiced-apples.md
