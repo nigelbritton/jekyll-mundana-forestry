@@ -1,5 +1,6 @@
 ---
 ingredients:
+- ingredient: 1 tsp ground cinnamon
 - ingredient: 6 apples
 instructions:
 - instruction: Cut the apples into slices.
