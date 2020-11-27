@@ -1,4 +1,70 @@
 ---
 label: Recipe
 hide_body: false
-fields: []
+fields:
+- name: ingredients
+  type: field_group_list
+  fields:
+  - name: ingredient
+    type: text
+    config:
+      required: false
+    label: Ingredient
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Ingredients
+- name: nutrition
+  type: field_group
+  config: {}
+  fields:
+  - name: calories
+    type: text
+    config:
+      required: false
+    label: Calories
+  - name: carbohydrate
+    type: text
+    config:
+      required: false
+    label: Carbohydrate
+  - name: protein
+    type: text
+    config:
+      required: false
+    label: Protein
+  - name: fat
+    type: text
+    config:
+      required: false
+    label: Fat
+  label: Nutrition
+- name: preptime
+  type: text
+  config:
+    required: false
+  label: Prep Time
+- name: yield
+  type: text
+  config:
+    required: false
+  label: Yield
+- name: instructions
+  type: field_group_list
+  fields:
+  - name: instruction
+    type: text
+    config:
+      required: false
+    label: Instruction
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Instructions
+- name: cooktime
+  type: text
+  config:
+    required: false
+  label: Cook Time
